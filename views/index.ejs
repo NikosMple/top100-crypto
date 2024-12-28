@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Rankings </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Cryptocurrency Rankings</h1>
+
+    <% if (cryptoData.length) { %>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th>Price (USD)</th>
+                    <th>Change (24h)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% cryptoData.forEach(crypto => { %>
+                    <tr>
+                        <td><%= crypto.rank %></td>
+                        <td><%= crypto.name %></td>
+                        <td><%= crypto.symbol %></td>
+                        <td>$<%= crypto.price.toFixed(2) %></td>
+                        <td><%= crypto.change.toFixed(2) %> %</td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } else { %>
+        <p>No data available.</p>
+        <% if (error) { %>
+            <p>Error: <%= error.message %></p>
+        <% } %>
+    <% } %>
+</body>
+</html>
