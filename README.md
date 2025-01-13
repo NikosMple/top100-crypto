@@ -21,37 +21,31 @@ Make sure you have the following installed:
 1. Clone the repository:
 ```
 git clone https://github.com/your-repo/crypto-rankings.git
-
 ```
 3. Navigate to the project directory:
 ```
 cd crypto-rankings
-
 ```
 
 4. Install dependencies:
  ```
 npm install
-
 ```
 
 5. Create a `.env` file in the root directory and add your **CoinMarketCap API key**:
 ```
 API_KEY=your_api_key_here
-
 ```
    Replace `your_api_key_here` with your actual API key from [CoinMarketCap](https://pro.coinmarketcap.com/).
 
 6. Start the server:
 ```
 nodemon index.js (Or node index.js)
-
 ```
 
 7. Open your browser and go to:
 ```
 http://localhost:3000
-
 ```
 
 ---
