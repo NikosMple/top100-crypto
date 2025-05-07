@@ -2,7 +2,7 @@
 
 This project is a simple web application that displays the latest cryptocurrency rankings using the **CoinMarketCap API**. The app fetches live data, such as rank, name, symbol, price, and 24-hour percentage change, and displays it in a tabular format on the frontend.
 
-Live Preview : https://top100-crypto.onrender.com/
+Live Preview : [https://top100-crypto.onrender.com/](https://top100-crypto.onrender.com/)
 
 ## Features
 - Fetches live cryptocurrency data using the **CoinMarketCap API**.
